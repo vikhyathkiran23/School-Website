@@ -1,71 +1,117 @@
-    <!DOCTYPE html>
-    <html lang="eng">
+<!DOCTYPE html>
+<html lang="eng">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-        <title>Vibgyor High</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
-    </head>
-
-    <body>
-        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
-            <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button> <a class="navbar-brand" href="#">Vibgyor High</a> </div>
-
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#welcome">School Name</a></li>
-                    <li><a href="#campus_life">Campus Life</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#new">What's New</a></li>
-                    <li><a href="#alumni">Alumni</a></li>
-                    <li><a href="#contact">Contact us</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container">
-            <section id="welcome"></section>
-            <div class="announcement">
-                <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">
-                    **Admissions open! Register on vibgyorhigh.com**
-                </marquee>
-            </div>
-            <iframe width="711" height="400" src="https://www.youtube.com/embed/ijLed-lyw80" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!--Contact-->
-            <div class="page-header" id="contact_us">
-                <h2 class="text-capitalize">Contact</h2>
-            </div>
-            <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.8876723111175!2d77.63766801412858!3d12.85053099093537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6b463a754a49%3A0xef114a8c7155b746!2sVIBGYOR%20High%20School%20-%20Electronic%20City%2C%20Bangalore!5e0!3m2!1sen!2sin!4v1614677905292!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <h3>Principal Name:</h3>
-                <hr style="width: 100%;"> <img src="https://i.pinimg.com/originals/04/fb/ec/04fbecafbbd35f4cb6585d136e5dfe3a.png" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
-                <h3>Ashwini Saxena</h3>
-                <div class="contact_1"> <a href="mailto:my@gmail.com?Subject=Hi">
-                        <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
-                    </a> <a href="#">
-                        <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
-                    </a> </div>
-            </div>
-
+<body>
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+        <div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Vibgyor High</a>
         </div>
 
-    </body>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#campus_life">Campus Life</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#new">What's New</a></li>
+                <li><a href="#alumni">Alumni</a></li>
+                <li><a href="#contact_us">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    </html>
+    <div class="container">
+        <marquee>
+            <h4 class="marquee_h4">Admissions Open! Login to vibgyorhigh.com</h4>
+        </marquee>
+        <iframe width="711" height="400" src="https://www.youtube.com/embed/ijLed-lyw80" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--Campus-Life-->
+        <div class="page-header" id="campus_life">
+            <h2 class="text-capitalize">campus life</h2>
+        </div>
+        <center>
+            <div class="campus_mainDiv">
+                <img class="img-responsive col-lg-5 col-md-3 col-sm-3 col-xs-12" src="https://soccerschools.bengalurufc.com/wp-content/uploads/2019/01/SoccerShield-6.jpg">
+                <h4 class="text-capitalize"><kbd>School Football Field</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">Renovated in 2018</h5>
+                <p class="text-muted text-left">I am not such a great fan of football, but since there was no other sport that matched what I was looking for, I decided to opt for Football. Initially, I was very much ignored in the field as I was not so great in it. But, when I passed to 4th Grade, the tables turned. Suddenly, every captain wanted me to be a part of their respective team and become a goalkeeper. And no, this was not to encourage me, instead they had a feeling that I was a good goalkeeper, even though I was thinking the opposite. And since then, football has been one of my favorite sports.</p>
+            </div>
+            <br>
+            <div class="campus_mainDiv">
+                <img class="img-responsive col-lg-3 col-md-3 col-sm-3 col-xs-12 swimming" src="https://content3.jdmagicbox.com/comp/bangalore/z6/080pxx80.xx80.111121121113.i1z6/catalogue/vibgyor-high-school-begur-road-bangalore-schools-wsfxl.jpg">
+                <h4 class="text-capitalize"><kbd>School Swimming Pool</kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize">Built in 2012</h5>
+                <p class="text-muted text-left">I used to dread swimming, while my friends considered it "fun time" rather than a sport. I still remember myself waiting anxiously for the bell to ring, so that I could get out. I did not have hydrophobia, but I never liked swimming. It was only after I visited Wonderla, that I started to like swimming and made some progress in learning to swim like my colleagues.
+                    <br>
+                </p>
+                <br>
+            </div>
+        </center>
+
+        <br>
+        <br>
+        <div class="page-header" id="achievements">
+            <h2 class="text-capitalize">Achievements</h2>
+        </div>
+        <div class="bg-primary achievement_head" data-toggle="collapse" data-target="#debate">
+            <span class="glyphicon glyphicon-film"></span> Interschool Debate Competition
+            <i class="fa fa-sort-desc"></i>
+        </div>
+        <div id="debate" class="collapse">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="https://i.ytimg.com/vi/u787IOfyzzw/maxresdefault.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 achievement_text">
+                <h5 class="text-success text-left text-capitalize">won 2nd prize in inter-school debate competition</h5>
+            </div>
+            <p>The mix of emotions you get during the entire duration of the debate tournament is simply amazing. One moment, you feel so scared, the next, you feel so confident. One moment, you feel so happy, the next you feel so devastated. Yet in the end, no matter the result, you always learn something after every debate!</p>
+        </div>
+
+        <div class="bg-primary achievement_head" data-toggle="collapse" data-target="#football">
+            <span class="glyphicon glyphicon-film"></span> Inter-School Football competition
+            <i class="fa fa-sort-desc"></i>
+        </div>
+        <div id="football" class="collapse">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="https://images.tribuneindia.com/cms/gall_content/2019/9/2019_9$largeimg24_Tuesday_2019_073536142.jpg" class="img-responsive img-thumbnail">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 achievement_text">
+                <h5 class="text-success text-left text-capitalize">Won 1st Prize in Inter-School Football Competition</h5>
+            </div>
+            <p>The captain was very tactful and confident. He was hopeful to turn the match in his favour. It was his confidence that instilled new hope and energy in the team. His team was again in high spirit. As a result it overturned the match and gained control over it which was lost during the mid-hour. In the meantime, the team scored a goal. The goal was appreciated with thunderous applause. The team was cheered by their supporters.</p>
+        </div>
+        <div class="page-header" id="contact_us">
+            <h2 class="text-capitalize">Contact</h2>
+        </div>
+        <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.887672311116!2d77.63766801430313!3d12.850530990935447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6b463a754a49%3A0xef114a8c7155b746!2sVIBGYOR%20High%20School%20-%20Electronic%20City%2C%20Bangalore!5e0!3m2!1sen!2sin!4v1615027199594!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <hr style="width: 100%;"> <img src="https://i.pinimg.com/originals/04/fb/ec/04fbecafbbd35f4cb6585d136e5dfe3a.png" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+            <h3>Principal Name:</h3>
+            <h3>Mr. Manoj Kumar Tiwari</h3>
+            <div class="contact_1"> <a href="mailto:my@gmail.com?Subject=Hi">
+                    <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+                </a> <a href="#">
+                    <h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;myinstagramid</h5>
+                </a> </div>
+        </div>
+
+    </div>
+</body></html>
+
