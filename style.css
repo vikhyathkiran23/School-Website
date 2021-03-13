@@ -7,7 +7,7 @@ marquee {
 }
 
 iframe {
-    width:100%
+    width: 100%
 }
 
 .swimming {
@@ -49,4 +49,16 @@ iframe {
 
 .achievement_text span {
     color: #ff7700;
+}
+
+.modal-content {
+    margin-top: 100px;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.p_modal {
+    margin-top: 10px;
 }
